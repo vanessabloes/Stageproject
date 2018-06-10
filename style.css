@@ -1,0 +1,40 @@
+@page {
+    size: Letter;
+    margin: 0in 0.44in 0.2in 0.44in;
+}
+
+.logo{
+    align: right;
+    height: 65px;
+    width: 65px;
+}
+
+.graph{
+    height: 150px;
+    width: 150px;
+}
+
+h2 {
+    background-color: #53419A ;
+    border-style: solid;
+    border-width: thin;
+    padding: 14px;
+    font-family: monospace;
+    color: white;
+     
+}
+
+.topright {
+        position: relative;
+        top: 16px;
+        right: 16px;
+        
+    }
+
+p {
+    border-style: solid;
+    border-radius: 8px;
+    border-width: thin;
+    padding: 10px;
+    font-family: monospace
+}

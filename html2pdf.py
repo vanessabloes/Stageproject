@@ -1,3 +1,3 @@
-from weasyprint import HTML
+from weasyprint import HTML, CSS
 
-HTML('/home/wall-e/Stageproject/reportdelta.html').write_pdf("test.pdf")
+HTML('reportdelta.html').write_pdf("test.pdf", stylesheets=["style.css"])
