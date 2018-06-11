@@ -37,10 +37,5 @@ if __name__ == '__main__':
 	output = 'testpdf.pdf'
 
 	report = ReportCreator(file_name)
-	sample, score, status = report.get_values()
-	
-	print sample
-	print score
-	print status
-
-	pdf = report.create_pdf(template, style, output)
+	report.get_values()
+	report.create_pdf(template, style, output)
