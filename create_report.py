@@ -7,6 +7,7 @@ class ReportCreator(object):
 		self.textfile1 = textfile1
 
 	def get_values(self):
+		"""txt parsers"""
 		with open(self.textfile1) as file:
 			for x, line in enumerate(file):
 				line = line.strip().split('\t')
@@ -19,9 +20,11 @@ class ReportCreator(object):
 			return self.sample, self.score, self.status
 
 	def create_images(self):
+		"""Create graphs from values"""
 		pass
 	
 	def create_pdf(self, html_template, stylesheet, output):
+		"""Combines html, jinja variables and css into pdf"""
 		env = Environment(loader=FileSystemLoader('.'))
 		template = env.get_template(html_template)
 		
