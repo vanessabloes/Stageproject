@@ -26,8 +26,8 @@ class ReportCreator(object):
 		with open(self.textfile2) as file:
 			for x, line in enumerate(file):
 				line = line.strip().split('\t')
-				regio = []
-				peaks = []
+				self.regio = []
+				self.peaks = []
 				if x != 0:
 					regio.append(line[0])
 					peaks.append(int(line[3]))	
