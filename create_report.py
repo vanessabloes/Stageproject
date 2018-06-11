@@ -34,11 +34,13 @@ class ReportCreator(object):
 		
 
 if __name__ == '__main__':
+	#Variabelen eventueel meegeven op commandline met argeparse
 	file_name = 'example_input/M18-1605_S10.MSI_Analysis.txt'
 	template = 'template/template.html'
 	style = 'template/style.css'
 	output = 'testpdf.pdf'
 
+	#script
 	report = ReportCreator(file_name)
 	report.get_values()
 	report.create_pdf(template, style, output)
