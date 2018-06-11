@@ -4,12 +4,15 @@
 }
 
 .logo{
-    align: right;
-    height: 65px;
-    width: 65px;
+    background-image: url('logo.png');
+    background-size: 80px 80px;
+    height: 80px;
+    width: 80px;
 }
 
 .graph{
+    background-image: url('example-graph.png');
+    background-size: 150px 150px;
     height: 150px;
     width: 150px;
 }

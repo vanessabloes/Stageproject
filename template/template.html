@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Report</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="logo"></div>
+
+<h2>Sample Identification</h2>
+<p> 
+    Sample ID = {{ sample }} <br>
+    Tumor type = Colorectal
+</p>
+<h2>MSI Result by region (mSINGS)</h2>
+
+<table align="center">
+    <tr></tr>
+        <th><div class="graph"></th>
+        <th><div class="graph"></th>
+        <th><div class="graph"></th>
+        <th><div class="graph"></th>
+    <tr></tr>
+        <th><div class="graph"></th>
+        <th><div class="graph"></th>
+        <th><div class="graph"></th>
+        <th><div class="graph"></th>
+    <tr></tr>
+        <th><div class="graph"></th>
+        <th><div class="graph"></th>
+        <th><div class="graph"></th>
+        <th><div class="graph"></th>
+</table>
+
+<h2>Conclusion</h2>
+<p> 
+    <u>mSINGS score: </u><br>
+    <br>
+    &leq;2 : MSS (Microsatellite Stability) <br>
+    >2  : MSI (Microsatellite Instability
+    </p>
+<p> 
+    mSINGS score = <b> {{ score }} </b> <br>
+    According to mSINGS the status of {{ sample }} is 
+        {% if score > 2%}
+            <b>MSI</b>
+        {% else %}
+            <b> MSS </b>
+        {% endif %}    
+</p>
+
+</body>
+</html> 
+
+
