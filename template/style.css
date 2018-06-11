@@ -13,8 +13,86 @@
     right: 0px;
 }
 
-.graph{
-    background-image: url('example-graph.png');
+.graph1{
+    background-image: url('1.png');
+    background-size: 150px 150px;
+    height: 150px;
+    width: 150px;
+}
+
+.graph2{
+    background-image: url('2.png');
+    background-size: 150px 150px;
+    height: 150px;
+    width: 150px;
+}
+
+.graph3{
+    background-image: url('3.png');
+    background-size: 150px 150px;
+    height: 150px;
+    width: 150px;
+}
+
+.graph4{
+    background-image: url('4.png');
+    background-size: 150px 150px;
+    height: 150px;
+    width: 150px;
+}
+
+.graph5{
+    background-image: url('5.png');
+    background-size: 150px 150px;
+    height: 150px;
+    width: 150px;
+}
+
+
+.graph6{
+    background-image: url('6.png');
+    background-size: 150px 150px;
+    height: 150px;
+    width: 150px;
+}
+
+.graph7{
+    background-image: url('7.png');
+    background-size: 150px 150px;
+    height: 150px;
+    width: 150px;
+}
+
+.graph8{
+    background-image: url('8.png');
+    background-size: 150px 150px;
+    height: 150px;
+    width: 150px;
+}
+
+.graph9{
+    background-image: url('9.png');
+    background-size: 150px 150px;
+    height: 150px;
+    width: 150px;
+}
+
+.graph10{
+    background-image: url('10.png');
+    background-size: 150px 150px;
+    height: 150px;
+    width: 150px;
+}
+
+.graph11{
+    background-image: url('11.png');
+    background-size: 150px 150px;
+    height: 150px;
+    width: 150px;
+}
+
+.graph12{
+    background-image: url('12.png');
     background-size: 150px 150px;
     height: 150px;
     width: 150px;
