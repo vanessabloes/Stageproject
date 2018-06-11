@@ -37,16 +37,16 @@
 <p> 
     <u>mSINGS score: </u><br>
     <br>
-    &leq;2 : MSS (Microsatellite Stability) <br>
-    >2  : MSI (Microsatellite Instability)
+    &leq;0.2 : MSS (Microsatellite Stability) <br>
+    >0.2  : MSI (Microsatellite Instability)
     </p>
 <p> 
     mSINGS score = <b> {{ score }} </b> <br>
     According to mSINGS the status of {{ sample }} is 
-        {% if score > 2%}
-            <b>MSI</b>
+        {% if score <= 0.2 %}
+            <b>MSS</b>
         {% else %}
-            <b> MSS </b>
+            <b> MSI </b>
         {% endif %}    
 </p>
 
