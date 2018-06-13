@@ -20,20 +20,21 @@ class ReportCreator(object):
 				if x == 0:
 					self.sample = line[1][0:8]
 				elif x == 3:
-					self.score = line[1]	
+					self.score = line[1]
 
-	def create_images(self):
-		"""Create graphs from values"""
-		regio = []
-		peaks_sample = []
-		peaks_base = []
+    def create_images(self):
+        """create graph from file"""
+        regio=[]
+        peaks_sample=[]
+        peaks_base=[]
 
-		with open(self.textfile2) as f:
-    	    for x, line in enumerate(f):
-        		line = line.strip().split('\t')
-        		if x != 0:
-            	    regio.append(line[0]) 
-            	    peaks_sample.append(float(line[3]))
+        with open(self.textfile2) as f:
+            for x, line in enumerate(f):
+                line = line.strip().split('\t')
+                if x != 0:
+                    regio.append(line[0])
+                    peaks_sample.append(float(line[3]))	
+
 
 		with open('/home/wall-e/msings/doc/MSI_BASELINE.txt') as b:
     		for x, line in enumerate(b):
